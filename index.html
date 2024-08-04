@@ -40,14 +40,23 @@
     <h1>DOM text tool</h1>
     <div class="main">
         <input type="text" class="textbox" placeholder="Enter A string" id="input">
-        <p class="textbox" id="result"> b</p>
+        <p class="textbox" id="result"> </p>
         
         <div>
-            <button> UPPER CASE</button>
-            <button>LOWER CASE</button>
-            <button>WORD COUNT</button>
+            <button type="button" onclick="makeupper()"> UPPER CASE</button>
+            <button id="lower()">LOWER CASE</button>
+            <button class="wordCount()">WORD COUNT</button>
             <button>AAAA</button>
         </div>
     </div>
+    <script>
+        function makeupper(){
+            const inputText =  document.getElementById("input")
+            const output = document.getElementById("result")
+console.log("aaa");
+
+            output.innerText = inputText.value.toUpperCase()
+        }
+    </script>
 </body>
 </html>
