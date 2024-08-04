@@ -47,7 +47,7 @@
             <button type="button" onclick="makeupper()"> UPPER CASE</button>
             <button onclick="lower()">LOWER CASE</button>
             <button onclick="wordCount()">WORD COUNT</button>
-            <button>AAAA</button>
+            <button onclick="charCount()">Char Count</button>
         </div>
     </div>
     <script>
@@ -65,6 +65,11 @@
             const inputText =  document.getElementById("input")
             const output = document.getElementById("result")
             output.innerText = `Word Count : ${inputText.value.split(" ").length}`
+        }
+        function charCount(){
+            const inputText =  document.getElementById("input")
+            const output = document.getElementById("result")
+            output.innerText = `Char Count : ${inputText.value.length}`
         }
     </script>
 </body>
