@@ -34,6 +34,7 @@
             background: linear-gradient(grey,pink,red);
 
         }
+
     </style>
 </head>
 <body>
@@ -42,10 +43,10 @@
         <input type="text" class="textbox" placeholder="Enter A string" id="input">
         <p class="textbox" id="result"> </p>
         
-        <div>
+        <div class="btn">
             <button type="button" onclick="makeupper()"> UPPER CASE</button>
-            <button id="lower()">LOWER CASE</button>
-            <button class="wordCount()">WORD COUNT</button>
+            <button onclick="lower()">LOWER CASE</button>
+            <button onclick="wordCount()">WORD COUNT</button>
             <button>AAAA</button>
         </div>
     </div>
@@ -53,10 +54,14 @@
         function makeupper(){
             const inputText =  document.getElementById("input")
             const output = document.getElementById("result")
-console.log("aaa");
-
             output.innerText = inputText.value.toUpperCase()
         }
+        function lower(){
+            const inputText =  document.getElementById("input")
+            const output = document.getElementById("result")
+            output.innerText = inputText.value.toLowerCase()
+        }
+  
     </script>
 </body>
 </html>
