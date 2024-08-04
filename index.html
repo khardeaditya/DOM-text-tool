@@ -14,13 +14,25 @@
             height: 400px;
             width: 100%;
             background: linear-gradient(grey,pink,red);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .textbox{
+            height: 30px;
+            width: 90%;
+            background-color: antiquewhite;
+            padding: 10px;
+            font-size: 30px;
         }
     </style>
 </head>
 <body>
     <h1>DOM text tool</h1>
     <div class="main">
-    
+        <input type="text" class="textbox" placeholder="Enter A string" id="input">
+        <p class="textbox" id="result"> b</p>
     </div>
 </body>
 </html>
