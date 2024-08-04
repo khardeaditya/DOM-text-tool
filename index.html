@@ -61,7 +61,11 @@
             const output = document.getElementById("result")
             output.innerText = inputText.value.toLowerCase()
         }
-  
+        function wordCount(){
+            const inputText =  document.getElementById("input")
+            const output = document.getElementById("result")
+            output.innerText = `Word Count : ${inputText.value.split(" ").length}`
+        }
     </script>
 </body>
 </html>
