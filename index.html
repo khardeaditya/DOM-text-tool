@@ -8,12 +8,14 @@
         body{
             padding: 0;
             margin: 0;
-            background: linear-gradient(rgb(255, 236, 236),pink,red);
+            background-image: url(./download.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .main{
             height: 400px;
             width: 100%;
-            background: linear-gradient(grey,pink,red);
+            
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -22,8 +24,7 @@
         .textbox{
             height: 30px;
             width: 90%;
-            background-color: antiquewhite;
-            padding: 10px;
+background-color: aliceblue;            padding: 10px;
             font-size: 30px;
             border-radius: 10px;
         }
@@ -31,14 +32,19 @@
             width: 200px;
             padding: 10px;
             margin: 5px 40px;
+            font-size: 15px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
             background: linear-gradient(grey,pink,red);
 
         }
         h1{
-            background: linear-gradient(rgb(255, 236, 236),pink,red);
             text-align: center;
             padding: 10px;
             margin-bottom: -2px;
+            color: white;
         }
     </style>
 </head>
@@ -56,24 +62,26 @@
         </div>
     </div>
     <script>
+             const inputText =  document.getElementById("input")
+             const output = document.getElementById("result")
+
         function makeupper(){
-            const inputText =  document.getElementById("input")
-            const output = document.getElementById("result")
+       
             output.innerText = inputText.value.toUpperCase()
         }
         function lower(){
-            const inputText =  document.getElementById("input")
-            const output = document.getElementById("result")
+            // const inputText =  document.getElementById("input")
+            // const output = document.getElementById("result")
             output.innerText = inputText.value.toLowerCase()
         }
         function wordCount(){
-            const inputText =  document.getElementById("input")
-            const output = document.getElementById("result")
+            // const inputText =  document.getElementById("input")
+            // const output = document.getElementById("result")
             output.innerText = `Word Count : ${inputText.value.split(" ").length}`
         }
         function charCount(){
-            const inputText =  document.getElementById("input")
-            const output = document.getElementById("result")
+            // const inputText =  document.getElementById("input")
+            // const output = document.getElementById("result")
             output.innerText = `Char Count : ${inputText.value.length}`
         }
     </script>
